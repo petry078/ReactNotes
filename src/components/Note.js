@@ -9,7 +9,7 @@ const Note = ({ id, text, date, handleDeleteNote }) => {
 				<MdDeleteForever
 					onClick={() => handleDeleteNote(id)}
 					className='delete-icon'
-					size='1.3em'
+					size="0.8em"
 				/>
 			</div>
 		</div>
@@ -17,3 +17,5 @@ const Note = ({ id, text, date, handleDeleteNote }) => {
 };
 
 export default Note;
+
+

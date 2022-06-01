@@ -14,8 +14,6 @@ const App = () => {
 
 	const [searchText, setSearchText] = useState('');
 
-	const [darkMode, setDarkMode] = useState(false);
-
 	useEffect(() => {
 		const savedNotes = JSON.parse(
 			localStorage.getItem('react-notes-app-data')
@@ -51,7 +49,6 @@ const App = () => {
 
 	return (
 			<div className='container'>
-        <h1>Notes</h1>
 				<Search handleSearchNote={setSearchText} />
 				<NotesList
 					notes={notes.filter((note) =>
